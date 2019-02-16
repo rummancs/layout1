@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:layout_weight="2"
+    android:background="#FFFFFF"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_weight="4">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp">
+            <TextView
+                android:id="@+id/LeftView"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:background="@mipmap/img01"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="4dp"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp">
+            <TextView
+                android:id="@+id/RightView"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:background="@mipmap/img02"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="4dp"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_weight="4">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp">
+
+            <TextView
+                android:id="@+id/LeftBView"
+                android:layout_width="180dp"
+                android:layout_height="fill_parent"
+                android:background="@mipmap/img04"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="4dp"/>
+
+            <TextView
+                android:id="@+id/LeftDView"
+                android:layout_width="180dp"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="4dp"
+                android:background="@mipmap/img03" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_weight="4">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp">
+
+            <TextView
+                android:id="@+id/LeftEView"
+                android:layout_width="180dp"
+                android:layout_height="fill_parent"
+                android:background="@mipmap/img05"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="2dp"/>
+
+            <TextView
+                android:id="@+id/LeftFView"
+                android:layout_width="180dp"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="2dp"
+                android:background="@mipmap/img06" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
